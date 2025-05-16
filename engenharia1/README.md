@@ -10,7 +10,7 @@ O Texto 1 compara a engenharia de software com outras engenharias tradicionais, 
 
 O texto propõe que a engenharia de software vai além da simples programação, abrangendo todas as práticas, ferramentas e processos usados por uma organização para construir e manter código de forma sustentável ao longo do tempo. A principal ideia apresentada é que engenharia de software pode ser entendida como “programação ao longo do tempo”, considerando todas as fases do ciclo de vida do código — da concepção à descontinuação. O livro destaca três princípios fundamentais para orientar essa prática: a importância de considerar como o código precisará se adaptar com o tempo e diante de mudanças; como a organização deve evoluir à medida que cresce, enfrentando novos desafios de escala; e como as decisões técnicas sempre envolvem compensações e custos, que devem ser avaliados com base nas lições aprendidas ao lidar com o tempo, a mudança, a escala e o crescimento.
 
---
+---
 
 ## ATIVIDADE 3
 
