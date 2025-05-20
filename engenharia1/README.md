@@ -56,6 +56,12 @@ Criar um sistema genérico e configurável permite adaptações futuras, mas tor
 
 ## ATIVIDADE 4
 ![image](https://github.com/user-attachments/assets/2e383721-b6ce-4ed9-b4f5-765850b69fa9)
+A imagem do slide 57 faz uma relfexão sobre as etapas de desenvolvimento de um produto. E a partir dela se conclui que a melhor forma de desenvolver um produto novo é produzir um produto mínimo viavél(um protótipo mais simples , porém funcional)  em cada etapa até o desenvolvimento do produto final.
+
+---
+
+## ATIVIDADE 5
+
 
 
 
