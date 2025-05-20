@@ -62,7 +62,111 @@ A imagem do slide 57 faz uma relfexão sobre as etapas de desenvolvimento de um 
 
 ## ATIVIDADE 5
 
+[Uplopackage estoque;
 
+import java.util.ArrayList;
+import java.util.List;
+
+public class Estoque {
+    private List<Produto> produtos = new ArrayList<>();
+
+    public void addProduto(Produto produto) {
+        produtos.add(produto);
+    }
+
+    // Busca um produto pelo nome (retorna o primeiro encontrado)
+    public Produto buscarProdutoNome(String nome) {
+        for (Produto produto : produtos) {
+            if (produto.getNome().equalsIgnoreCase(nome)) {
+                return produto;
+            }
+        }
+        return null; // Se não encontrar
+    }
+
+    // Busca todos os produtos de um tipo (doce/salgado)
+    public List<Produto> buscarProdutoTipo(String tipo) {
+        List<Produto> encontrados = new ArrayList<>();
+        for (Produto produto : produtos) {
+            if (produto.getTipo().equalsIgnoreCase(tipo)) {
+                encontrados.add(produto);
+            }
+        }
+        return encontrados;
+    }
+
+    // Retorna todos os produtos (opcional)
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
+}ading Estoque.java…]()
+
+
+
+
+[Uplopackage estoque;
+
+public class Produto {
+    private String nome;
+    private String tipo; // "doce" ou "salgado"
+
+    public Produto(String nome, String tipo) {
+        this.nome = nome;
+        this.tipo = tipo;
+    }
+
+    // Getters e Setters
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+}ading Produto.java…]()
+
+
+
+
+[Uploading Tpackage estoque;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+
+
+class TesteEstoque {
+    @Test
+    void testBuscarProduto() {
+        Estoque estoque = new Estoque();
+        estoque.addProduto(new Produto("Brigadeiro", "doce"));
+        estoque.addProduto(new Produto("Coxinha", "salgado"));
+        estoque.addProduto(new Produto("Pudim", "doce"));
+
+        // Verifica se há 3 produtos
+        assertEquals(3, estoque.getProdutos().size());
+
+        // Busca um produto pelo nome
+        Produto produto = estoque.buscarProdutoNome("Coxinha");
+        assertNotNull(produto);
+        assertEquals("salgado", produto.getTipo());
+
+        // Busca todos os doces
+        List<Produto> doces = estoque.buscarProdutoTipo("doce");
+        assertEquals(2, doces.size()); // Brigadeiro e Pudim
+    }
+}esteEstoque.java…]()
 
 
 
