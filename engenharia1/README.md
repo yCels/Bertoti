@@ -62,8 +62,10 @@ A imagem do slide 57 faz uma relfexão sobre as etapas de desenvolvimento de um 
 
 ## ATIVIDADE 5
 
-### Classe estoque :
 
+
+
+'''java
 package estoque;
 
 import java.util.ArrayList;
@@ -99,11 +101,11 @@ public class Estoque {
     public List<Produto> getProdutos() {
         return produtos;
     }
+    
 }
+'''
 
-
-### Classe Produto
-
+'''java
 package estoque;
 
 public class Produto {
@@ -131,15 +133,12 @@ public class Produto {
         this.tipo = tipo;
     }
 }
-
-
-### Classe TesteEstoque
+'''
+'''java
 package estoque;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -164,8 +163,7 @@ class TesteEstoque {
         assertEquals(2, doces.size()); // Brigadeiro e Pudim
     }
 }
-
-
+'''
 
 
 
