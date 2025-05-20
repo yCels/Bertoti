@@ -65,7 +65,7 @@ A imagem do slide 57 faz uma relfexão sobre as etapas de desenvolvimento de um 
 
 
 
-'''java
+```java
 package estoque;
 
 import java.util.ArrayList;
@@ -103,9 +103,9 @@ public class Estoque {
     }
     
 }
-'''
+```
 
-'''java
+```java
 package estoque;
 
 public class Produto {
@@ -133,8 +133,8 @@ public class Produto {
         this.tipo = tipo;
     }
 }
-'''
-'''java
+```
+```java
 package estoque;
 
 import org.junit.jupiter.api.Test;
@@ -163,7 +163,7 @@ class TesteEstoque {
         assertEquals(2, doces.size()); // Brigadeiro e Pudim
     }
 }
-'''
+```
 
 
 
